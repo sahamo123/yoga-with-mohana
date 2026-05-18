@@ -128,10 +128,12 @@
       --gold: #C4922A;
       --gold-light: #E8D5A3;
       --gold-glow: rgba(196, 146, 42, 0.15);
-      --sage: #7A8B6F;
-      --sage-light: #E8EDE5;
-      --cream: #FDF8F0;
-      --dark: #2C2416;
+      --sage: #3A7D34;
+      --sage-light: #EDF5EB;
+      --sage-muted: #5A9B52;
+      --leaf: #2E6B28;
+      --cream: #FDFDF8;
+      --dark: #1E2A16;
       --warm-white: #FEFCF8;
       --wa-green: #25D366;
       --wa-dark: #128C7E;
@@ -163,7 +165,7 @@
       font-weight: 700;
       text-transform: uppercase;
       letter-spacing: 0.2em;
-      color: var(--gold);
+      color: var(--sage);
       margin-bottom: 12px;
     }
 
@@ -182,7 +184,7 @@
 
     .section-sub.centered { margin-left: auto; margin-right: auto; text-align: center; }
 
-    .gold-line { width: 50px; height: 2px; background: var(--gold); border: none; margin: 20px 0; }
+    .gold-line { width: 50px; height: 2px; background: var(--sage); border: none; margin: 20px 0; }
 
     /* ===== BUTTONS ===== */
     .btn {
@@ -220,25 +222,25 @@
     .btn-wa svg { width: 20px; height: 20px; fill: #fff; flex-shrink: 0; }
 
     .btn-gold {
-      background: var(--gold);
+      background: var(--sage);
       color: #fff;
-      border-color: var(--gold);
+      border-color: var(--sage);
     }
 
     .btn-gold:hover {
-      background: #a87a1f;
-      border-color: #a87a1f;
+      background: var(--leaf);
+      border-color: var(--leaf);
       transform: translateY(-2px);
-      box-shadow: 0 4px 16px rgba(196, 146, 42, 0.3);
+      box-shadow: 0 4px 16px rgba(58, 125, 52, 0.3);
     }
 
     .btn-outline {
       background: transparent;
-      color: var(--gold);
-      border-color: var(--gold);
+      color: var(--sage);
+      border-color: var(--sage);
     }
 
-    .btn-outline:hover { background: var(--gold); color: #fff; transform: translateY(-2px); }
+    .btn-outline:hover { background: var(--sage); color: #fff; transform: translateY(-2px); }
 
     /* ===== NAVBAR ===== */
     .navbar {
@@ -254,11 +256,11 @@
     .navbar .container { display: flex; align-items: center; justify-content: space-between; width: 100%; }
 
     .nav-brand {
-      display: flex; align-items: center; gap: 8px;
-      font-family: 'Cormorant Garamond', serif; font-size: 1.35rem; font-weight: 700; color: var(--gold);
+      display: flex; align-items: center; gap: 10px;
+      font-family: 'Cormorant Garamond', serif; font-size: 1.35rem; font-weight: 700; color: var(--leaf);
     }
 
-    .nav-brand img { height: 40px; width: auto; }
+    .nav-brand img { height: 52px; width: auto; }
 
     .nav-links { display: flex; list-style: none; gap: 28px; align-items: center; }
 
@@ -269,10 +271,10 @@
 
     .nav-links a::after {
       content: ''; position: absolute; bottom: -4px; left: 0;
-      width: 0; height: 2px; background: var(--gold); transition: width 0.3s ease;
+      width: 0; height: 2px; background: var(--sage); transition: width 0.3s ease;
     }
 
-    .nav-links a:hover { color: var(--gold); }
+    .nav-links a:hover { color: var(--sage); }
     .nav-links a:hover::after { width: 100%; }
 
     .nav-wa {
@@ -297,7 +299,7 @@
     .hero {
       min-height: 100vh; min-height: 100dvh;
       display: flex; align-items: center; position: relative;
-      background: linear-gradient(135deg, rgba(253,248,240,0.95) 0%, rgba(232,213,163,0.2) 50%, rgba(232,237,229,0.25) 100%);
+      background: linear-gradient(135deg, rgba(253,253,248,0.95) 0%, rgba(237,245,235,0.4) 50%, rgba(232,213,163,0.15) 100%);
       overflow: hidden; padding: 80px 0 40px;
     }
 
@@ -306,10 +308,13 @@
       width: 600px; height: 600px; opacity: 0.05; pointer-events: none;
     }
 
-    .hero-content { position: relative; z-index: 2; max-width: 620px; }
+    .hero-inner { display: flex; align-items: center; gap: 48px; position: relative; z-index: 2; }
+    .hero-content { max-width: 560px; }
+    .hero-logo { flex-shrink: 0; }
+    .hero-logo img { width: 280px; height: auto; filter: drop-shadow(0 8px 32px rgba(58, 125, 52, 0.12)); }
 
     .hero h1 { font-size: clamp(2.2rem, 5vw, 3.8rem); color: var(--dark); margin-bottom: 16px; }
-    .hero h1 em { font-style: italic; color: var(--gold); }
+    .hero h1 em { font-style: italic; color: var(--sage); }
 
     .hero-desc {
       font-size: clamp(1rem, 2.2vw, 1.15rem);
@@ -327,18 +332,18 @@
     .trust-badge {
       display: inline-flex; align-items: center; gap: 6px;
       padding: 6px 14px; background: var(--warm-white);
-      border: 1px solid var(--gold-light); border-radius: 20px;
-      font-size: 0.75rem; font-weight: 700; color: var(--dark);
+      border: 1px solid rgba(58, 125, 52, 0.25); border-radius: 20px;
+      font-size: 0.75rem; font-weight: 700; color: var(--leaf);
     }
 
     /* ===== PROBLEM ===== */
     .problem {
       padding: 80px 0;
-      background: var(--dark);
+      background: linear-gradient(135deg, var(--dark) 0%, #1A3314 100%);
       color: rgba(255, 255, 255, 0.85);
     }
 
-    .problem .overline { color: var(--gold-light); }
+    .problem .overline { color: var(--gold); }
     .problem .section-heading { color: var(--gold-light); }
 
     .problem-grid {
@@ -383,7 +388,7 @@
     .benefit-item {
       text-align: center; padding: 32px 20px;
       border-radius: 8px; background: var(--warm-white);
-      border: 1px solid rgba(232, 213, 163, 0.3);
+      border: 1px solid rgba(58, 125, 52, 0.12);
       transition: all 0.3s ease;
     }
 
@@ -417,14 +422,14 @@
     .credentials { display: flex; gap: 12px; margin: 20px 0; flex-wrap: wrap; }
 
     .credential-badge {
-      padding: 10px 18px; border: 1px solid var(--gold-light);
-      border-radius: 4px; border-top: 3px solid var(--gold);
+      padding: 10px 18px; border: 1px solid rgba(58, 125, 52, 0.2);
+      border-radius: 4px; border-top: 3px solid var(--sage);
       background: var(--warm-white);
     }
 
     .credential-badge strong {
       display: block; font-family: 'Cormorant Garamond', serif;
-      font-size: 1.05rem; color: var(--gold);
+      font-size: 1.05rem; color: var(--sage);
     }
 
     .credential-badge span { font-size: 0.75rem; color: rgba(44, 36, 22, 0.6); }
@@ -446,12 +451,12 @@
       background: var(--warm-white); border-radius: 8px; padding: 36px 28px;
       box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
       transition: all 0.3s ease; text-align: center;
-      border: 1px solid rgba(232, 213, 163, 0.2);
+      border: 1px solid rgba(58, 125, 52, 0.1);
     }
 
     .card:hover { transform: translateY(-4px); box-shadow: 0 10px 36px rgba(0, 0, 0, 0.09); }
 
-    .card-icon { width: 48px; height: 48px; margin: 0 auto 20px; color: var(--gold); }
+    .card-icon { width: 48px; height: 48px; margin: 0 auto 20px; color: var(--sage); }
     .card h3 { font-size: 1.3rem; margin-bottom: 10px; color: var(--dark); }
     .card p { font-size: 0.9rem; color: rgba(44, 36, 22, 0.65); margin-bottom: 20px; }
 
@@ -477,16 +482,16 @@
 
     .yt-link {
       display: inline-flex; align-items: center; gap: 8px;
-      color: var(--gold); font-weight: 700; font-size: 0.9rem; transition: color 0.3s ease;
+      color: var(--sage); font-weight: 700; font-size: 0.9rem; transition: color 0.3s ease;
     }
 
-    .yt-link:hover { color: #a87a1f; }
+    .yt-link:hover { color: var(--leaf); }
     .yt-link svg { width: 22px; height: 22px; }
 
     /* ===== CTA BANNER ===== */
     .cta-banner {
       padding: 64px 0;
-      background: linear-gradient(135deg, var(--gold) 0%, #a87a1f 100%);
+      background: linear-gradient(135deg, var(--leaf) 0%, var(--sage) 60%, var(--gold) 100%);
       text-align: center; color: #fff;
     }
 
@@ -519,7 +524,7 @@
     .faq-list { max-width: 700px; margin: 0 auto; }
 
     .faq-item {
-      border-bottom: 1px solid var(--gold-light);
+      border-bottom: 1px solid rgba(58, 125, 52, 0.15);
       padding: 20px 0;
     }
 
@@ -534,7 +539,7 @@
     }
 
     .faq-q .faq-toggle {
-      font-size: 1.4rem; color: var(--gold); flex-shrink: 0;
+      font-size: 1.4rem; color: var(--sage); flex-shrink: 0;
       transition: transform 0.3s ease; font-weight: 300;
     }
 
@@ -553,7 +558,8 @@
 
     /* ===== FOOTER ===== */
     .footer {
-      background: var(--dark); color: rgba(255, 255, 255, 0.6);
+      background: linear-gradient(135deg, var(--dark) 0%, #1A3314 100%);
+      color: rgba(255, 255, 255, 0.6);
       padding: 48px 0 20px;
     }
 
@@ -574,7 +580,7 @@
     .footer-links a:hover { color: var(--gold-light); }
 
     .footer-bottom {
-      border-top: 1px solid rgba(196, 146, 42, 0.15);
+      border-top: 1px solid rgba(58, 125, 52, 0.2);
       padding-top: 20px; text-align: center; font-size: 0.75rem;
     }
 
@@ -658,6 +664,9 @@
       .hero-buttons { justify-content: center; }
       .hero-trust { justify-content: center; }
 
+      .hero-inner { flex-direction: column; text-align: center; }
+      .hero-logo img { width: 200px; }
+      .hero-logo { order: -1; }
       .hero-mandala { width: 350px; right: -15%; opacity: 0.04; }
 
       .about-grid { grid-template-columns: 1fr; gap: 32px; }
@@ -733,7 +742,7 @@
   <!-- HERO -->
   <section class="hero" aria-label="Welcome to Yoga with Mohana">
     <svg class="hero-mandala" viewBox="0 0 200 200" aria-hidden="true">
-      <g fill="none" stroke="#C4922A" stroke-width="0.5" opacity="0.8">
+      <g fill="none" stroke="#3A7D34" stroke-width="0.5" opacity="0.8">
         <circle cx="100" cy="100" r="90"/><circle cx="100" cy="100" r="75"/>
         <circle cx="100" cy="100" r="60"/><circle cx="100" cy="100" r="45"/>
         <circle cx="100" cy="100" r="30"/><circle cx="100" cy="100" r="15"/>
@@ -748,6 +757,7 @@
       </g>
     </svg>
     <div class="container">
+      <div class="hero-inner">
       <div class="hero-content fade-in">
         <p class="overline">Online Yoga Classes &bull; Live &amp; Personal</p>
         <h1>Your Body Is Stiff. Your Mind Is Restless. <em>Yoga Can Fix Both.</em></h1>
@@ -764,6 +774,10 @@
           <span class="trust-badge">SVYASA Trained</span>
           <span class="trust-badge">100% Online</span>
         </div>
+      </div>
+      <div class="hero-logo fade-in">
+        <img src="logo.png" alt="Yoga with Mohana — meditation lotus logo" width="280" height="280">
+      </div>
       </div>
     </div>
   </section>
@@ -945,8 +959,8 @@
       </div>
       <div class="video-wrapper fade-in">
         <div class="video-responsive">
-          <!-- Replace VIDEO_ID_HERE with your YouTube video ID -->
-          <iframe src="https://www.youtube.com/embed/VIDEO_ID_HERE" title="Free Yoga Class by Mohanapriya — Yoga with Mohana" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+          <!-- Replace 019wss71nFw with your YouTube video ID -->
+          <iframe src="https://www.youtube.com/embed/019wss71nFw" title="Free Yoga Class by Mohanapriya — Yoga with Mohana" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
         </div>
       </div>
       <div class="videos-cta fade-in">
