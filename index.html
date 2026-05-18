@@ -18,7 +18,7 @@
   <meta name="twitter:description" content="Live online yoga with certified instructor Mohanapriya. Stress relief, flexibility, inner peace. Book free trial via WhatsApp.">
   <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
   <meta name="author" content="Mohanapriya — Yoga with Mohana">
-  <link rel="canonical" href="https://yogawithmohana.vercel.app/">
+  <link rel="canonical" href="https://yoga-with-mohana.netlify.app/">
 
   <!-- Structured Data for LLM/Search Discovery -->
   <script type="application/ld+json">
@@ -28,7 +28,7 @@
       {
         "@type": "WebSite",
         "name": "Yoga with Mohana",
-        "url": "https://yogawithmohana.vercel.app/",
+        "url": "https://yoga-with-mohana.netlify.app/",
         "description": "Online yoga classes by Mohanapriya, a certified yoga teacher (RYT 200H, SVYASA YIC). Offering hatha yoga, pranayama, meditation, and yoga therapy sessions online.",
         "publisher": { "@id": "#mohanapriya" }
       },
@@ -61,7 +61,7 @@
         "areaServed": { "@type": "Place", "name": "Worldwide (Online)" },
         "serviceType": ["Online Yoga Classes", "Hatha Yoga", "Pranayama", "Meditation", "Yoga Therapy"],
         "telephone": "+918618714094",
-        "url": "https://yogawithmohana.vercel.app/",
+        "url": "https://yoga-with-mohana.netlify.app/",
         "priceRange": "$$",
         "availableChannel": {
           "@type": "ServiceChannel",
@@ -253,7 +253,12 @@
 
     .navbar .container { display: flex; align-items: center; justify-content: space-between; width: 100%; }
 
-    .nav-brand { font-family: 'Cormorant Garamond', serif; font-size: 1.35rem; font-weight: 700; color: var(--gold); }
+    .nav-brand {
+      display: flex; align-items: center; gap: 8px;
+      font-family: 'Cormorant Garamond', serif; font-size: 1.35rem; font-weight: 700; color: var(--gold);
+    }
+
+    .nav-brand img { height: 40px; width: auto; }
 
     .nav-links { display: flex; list-style: none; gap: 28px; align-items: center; }
 
@@ -407,7 +412,7 @@
       border: 2px solid var(--gold-light); overflow: hidden;
     }
 
-    .about-image .om-symbol { font-size: 5rem; color: var(--gold-light); opacity: 0.6; font-family: serif; }
+    .about-image img { width: 100%; height: 100%; object-fit: cover; }
 
     .credentials { display: flex; gap: 12px; margin: 20px 0; flex-wrap: wrap; }
 
@@ -710,7 +715,7 @@
   <!-- NAVBAR -->
   <nav class="navbar" role="navigation" aria-label="Main navigation">
     <div class="container">
-      <a href="#" class="nav-brand">Yoga with Mohana</a>
+      <a href="#" class="nav-brand"><img src="logo.png" alt="Yoga with Mohana logo" width="40" height="40">Yoga with Mohana</a>
       <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
@@ -850,7 +855,7 @@
     <div class="container">
       <div class="about-grid">
         <div class="about-image fade-in">
-          <span class="om-symbol" aria-hidden="true">&#x0950;</span>
+          <img src="logo.png" alt="Yoga with Mohana — Mohanapriya, certified yoga instructor" width="400" height="533" loading="lazy">
         </div>
         <div class="about-text fade-in">
           <p class="overline">Your Teacher</p>
@@ -1021,7 +1026,7 @@
     <div class="container">
       <div class="footer-grid">
         <div>
-          <div class="footer-brand">Yoga with Mohana</div>
+          <div class="footer-brand"><img src="logo.png" alt="Yoga with Mohana" width="36" height="36" style="height:36px;width:auto;vertical-align:middle;margin-right:8px;">Yoga with Mohana</div>
           <p style="font-size:0.85rem;">Authentic, research-backed yoga practice by Mohanapriya (RYT 200H, SVYASA). Live online classes for body, mind, and spirit.</p>
         </div>
         <div>
