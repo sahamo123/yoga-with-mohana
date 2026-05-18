@@ -5,10 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Yoga with Mohana | Online Yoga Classes for Stress Relief, Back Pain & Wellness</title>
   <meta name="description" content="Join Mohanapriya (RYT 200H certified) for live online yoga classes from home. Relieve stress, fix back pain, improve flexibility & find inner peace. Book a free trial on WhatsApp.">
-  <meta name="keywords" content="online yoga classes, yoga for stress relief, yoga for back pain, yoga for beginners, pranayama classes online, meditation classes, yoga therapy, RYT 200H, Mohanapriya yoga teacher, hatha yoga online, yoga from home India">
+  <meta name="keywords" content="online yoga classes, yoga for stress relief, yoga for back pain, yoga for beginners, pranayama classes online, meditation classes, holistic yoga practice, RYT 200H, Mohanapriya yoga teacher, hatha yoga online, yoga from home India">
 
   <meta property="og:title" content="Yoga with Mohana — Online Yoga Classes for Body, Mind & Spirit">
-  <meta property="og:description" content="Certified yoga teacher Mohanapriya (RYT 200H) offers live online yoga classes. Hatha yoga, pranayama, meditation & yoga therapy. Join from anywhere.">
+  <meta property="og:description" content="Certified yoga teacher Mohanapriya (RYT 200H) offers live online yoga classes. Hatha yoga, pranayama, meditation & holistic yoga practice. Join from anywhere.">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="en_IN">
   <meta property="og:site_name" content="Yoga with Mohana">
@@ -27,7 +27,7 @@
         "@type": "WebSite",
         "name": "Yoga with Mohana",
         "url": "https://yoga-with-mohana.netlify.app/",
-        "description": "Online yoga classes by Mohanapriya, a certified yoga teacher (RYT 200H). Offering hatha yoga, pranayama, meditation, and yoga therapy sessions online.",
+        "description": "Online yoga classes by Mohanapriya, a certified yoga teacher (RYT 200H). Offering hatha yoga, pranayama, meditation, and holistic yoga practice sessions online.",
         "publisher": { "@id": "#mohanapriya" }
       },
       {
@@ -35,13 +35,13 @@
         "@id": "#mohanapriya",
         "name": "Mohanapriya",
         "jobTitle": "Certified Yoga Instructor",
-        "description": "Mohanapriya is a Registered Yoga Teacher (RYT 200H) who completed her Yoga Instructor Course (YIC) from SVYASA. She specialises in hatha yoga, pranayama, meditation, and yoga therapy delivered through live online sessions.",
+        "description": "Mohanapriya is a Registered Yoga Teacher (RYT 200H) who completed her Yoga Instructor Course (YIC) from SVYASA. She specialises in hatha yoga, pranayama, meditation, and holistic yoga practice delivered through live online sessions.",
         "hasCredential": [
           { "@type": "EducationalOccupationalCredential", "credentialCategory": "Professional Certification", "name": "RYT 200H — Registered Yoga Teacher (200 Hours)" },
           { "@type": "EducationalOccupationalCredential", "credentialCategory": "Professional Certification", "name": "YIC — Yoga Instructor Course, SVYASA" }
         ],
         "sameAs": ["https://www.youtube.com/@YogawithMohana"],
-        "knowsAbout": ["Hatha Yoga", "Pranayama", "Meditation", "Yoga Therapy", "Stress Management through Yoga", "Yoga for Back Pain", "Classical Yoga"]
+        "knowsAbout": ["Hatha Yoga", "Pranayama", "Meditation", "Holistic Yoga Practice", "Stress Management through Yoga", "Yoga for Back Pain", "Classical Yoga"]
       },
       {
         "@type": "HealthAndBeautyBusiness",
@@ -49,7 +49,7 @@
         "description": "Online yoga classes for stress relief, back pain, flexibility, and mental wellness. Live sessions conducted by certified instructor Mohanapriya (RYT 200H).",
         "founder": { "@id": "#mohanapriya" },
         "areaServed": { "@type": "Place", "name": "Worldwide (Online)" },
-        "serviceType": ["Online Yoga Classes", "Hatha Yoga", "Pranayama", "Meditation", "Yoga Therapy"],
+        "serviceType": ["Online Yoga Classes", "Hatha Yoga", "Pranayama", "Meditation", "Holistic Yoga Practice"],
         "telephone": "+918618714094",
         "url": "https://yoga-with-mohana.netlify.app/",
         "priceRange": "$$",
@@ -59,7 +59,7 @@
         "@type": "FAQPage",
         "mainEntity": [
           { "@type": "Question", "name": "I've never done yoga before. Can I still join?", "acceptedAnswer": { "@type": "Answer", "text": "Absolutely. Most students start as complete beginners. Mohanapriya guides you step-by-step with modifications for every pose." } },
-          { "@type": "Question", "name": "What do I need for an online class?", "acceptedAnswer": { "@type": "Answer", "text": "Just a yoga mat or thick blanket, comfortable clothes, and a device with a camera for real-time corrections." } },
+          { "@type": "Question", "name": "What do I need for an online class?", "acceptedAnswer": { "@type": "Answer", "text": "A yoga mat (6mm–8mm recommended) or a thick blanket is enough for beginners." } },
           { "@type": "Question", "name": "Can yoga help with back pain and stress?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Regular yoga practice significantly reduces chronic back pain and lowers cortisol. Mohanapriya's classes specifically address these issues with targeted therapeutic techniques." } },
           { "@type": "Question", "name": "How do I book a class?", "acceptedAnswer": { "@type": "Answer", "text": "Tap the WhatsApp button and send a message. Mohanapriya will personally respond and schedule your free trial class." } }
         ]
@@ -435,16 +435,15 @@
     }
 
     .about-image {
-      aspect-ratio: 3/4; background: var(--cream);
+      aspect-ratio: 3/4; background: transparent;
       border-radius: 16px; display: flex; align-items: center; justify-content: center;
-      border: 2px solid var(--gold-light); overflow: hidden;
-      box-shadow: 0 20px 60px rgba(0,0,0,0.08);
+      overflow: hidden;
       transition: all 0.4s ease;
     }
 
-    .about-image:hover { transform: translateY(-4px); box-shadow: 0 24px 64px rgba(0,0,0,0.12); }
+    .about-image:hover { transform: translateY(-4px); }
 
-    .about-image img { width: 100%; height: 100%; object-fit: cover; }
+    .about-image img { width: 100%; height: 100%; object-fit: contain; }
 
     .credentials { display: flex; gap: 12px; margin: 20px 0; flex-wrap: wrap; }
 
@@ -941,7 +940,7 @@
           <p>Back pain, neck tension, joint stiffness — pills mask it temporarily but never fix the root cause.</p>
         </article>
       </div>
-      <p class="problem-quote fade-in">"Yoga is not about touching your toes. It is about what you learn on the way down."</p>
+      <p class="problem-quote fade-in">"Yoga is not about perfection. It is about presence."</p>
     </div>
   </section>
 
@@ -1073,9 +1072,9 @@
             <path d="M25 38c0-7 7-7 7-14s-7-7-7-14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
             <line x1="12" y1="42" x2="36" y2="42" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
           </svg>
-          <h3>Yoga Therapy</h3>
-          <p>Personalised sessions targeting back pain, neck tension, PCOD, thyroid issues, and chronic stress. Evidence-based approach.</p>
-          <a href="https://wa.me/918618714094?text=Hi%2C%20I%27m%20interested%20in%20Yoga%20Therapy%20sessions." target="_blank" rel="noopener noreferrer" class="btn btn-wa">
+          <h3>Holistic Yoga Practice</h3>
+          <p>Personalized yoga sessions focused on flexibility, posture, relaxation, breath awareness, meditation, and overall wellbeing.</p>
+          <a href="https://wa.me/918618714094?text=Hi%2C%20I%27m%20interested%20in%20Holistic%20Yoga%20Practice%20sessions." target="_blank" rel="noopener noreferrer" class="btn btn-wa">
             <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.625.846 5.059 2.284 7.034L.789 23.492l4.612-1.474A11.942 11.942 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818c-2.168 0-4.19-.587-5.935-1.607l-.425-.253-2.732.874.87-2.649-.275-.44A9.777 9.777 0 012.182 12c0-5.417 4.401-9.818 9.818-9.818S21.818 6.583 21.818 12 17.417 21.818 12 21.818z"/></svg>
             Enquire Now
           </a>
@@ -1142,7 +1141,7 @@
             <h3>What do I need for an online class?</h3>
             <span class="faq-toggle" aria-hidden="true">+</span>
           </div>
-          <div class="faq-a"><p>Just a yoga mat (or a thick blanket), comfortable clothes, and a device with a camera so Mohanapriya can guide you with real-time corrections. That's it.</p></div>
+          <div class="faq-a"><p>A yoga mat (6mm–8mm recommended) or a thick blanket is enough for beginners.</p></div>
         </div>
         <div class="faq-item fade-in">
           <div class="faq-q" role="button" tabindex="0" aria-expanded="false">
